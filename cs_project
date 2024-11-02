@@ -1,0 +1,30 @@
+from turtle import *
+t=Turtle()
+bgcolor("Green")
+shape("turtle")
+setup(width=800,height=800)
+
+bgpic(r"C:\Users\MUKUL 05\OneDrive\Pictures\maze1.gif")
+
+def f():
+    penup()
+    fd(50)
+def b():
+    penup()
+    bk(50)
+def r():
+    penup()
+    rt(90)
+    fd(50)
+def l():
+    penup()
+    lt(90)
+    bk(50)
+onkeypress(f,"Up")
+onkeypress(b,"Down")
+onkeypress(r,"Right")
+onkeypress(l,"Left")
+
+listen()
+mainloop()
+
